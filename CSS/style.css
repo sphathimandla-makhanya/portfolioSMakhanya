@@ -5,12 +5,22 @@
 }
 
 #photo{
-    height: 600px;
-    border-radius: 60%;
+    height: 200px;
+    border-radius: 50%;
 }
 
 /* Resume */
 
-.resume{
+#resume{
     height: 100vh;
+}
+
+#skills{
+    height: 100vh;
+}
+
+#image{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
 }
