@@ -1,0 +1,10 @@
+/* home */
+
+.home{
+    height: 100vh;
+}
+
+#photo{
+    height: 600px;
+    border-radius: 60%;
+}
