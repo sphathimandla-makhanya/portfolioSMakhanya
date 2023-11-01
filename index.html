@@ -8,7 +8,7 @@
     
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg bg-success sticky-top">
+        <nav class="navbar navbar-expand-lg bg-success sticky-top d-md-none">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -17,7 +17,7 @@
               <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#landing">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#Resume">Resume</a>
@@ -26,7 +26,7 @@
                     <a class="nav-link" href="#skills">Skills</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="#projects">Projects</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Testimonials</a>
@@ -39,9 +39,37 @@
             </div>
           </nav>
 
+        <!-- nav2 -->
+        <div class="side-navbar bg-success position-fixed d-none d-md-block">
+          <div class="logo ">
+            <a id="anchor" class="text-decoration-none fw-bolder text-danger ">SM</a>
+          </div><br><br><br><br><br>
+          <div class="navbar-item text-decoration-none p-3">
+            <a id="anchor" href="#landing"><img src="https://cdn-icons-png.flaticon.com/128/25/25694.png" alt="">Home</a>
+          </div>
+          <div class="navbar-item p-3">
+            <a id="anchor" href="#Resume"><img src="https://cdn-icons-png.flaticon.com/128/9119/9119108.png" alt=""> Resume</a>
+          </div>
+          <div class="navbar-item p-3">
+            <a id="anchor" href="#skills"><img src="https://cdn-icons-png.flaticon.com/128/4727/4727496.png" alt=""> Skills</a>
+          </div>
+          <div class="navbar-item p-3">
+            <a id="anchor" href="#projects"><img src="https://cdn-icons-png.flaticon.com/128/5956/5956494.png" alt=""> Projects</a>
+          </div>
+          <div class="navbar-item p-3">
+            <a id="anchor" href="#"><img src="https://cdn-icons-png.flaticon.com/128/9005/9005820.png" alt=""> Testimonials</a>
+          </div>
+          <div class="navbar-item p-3">
+            <a id="anchor" href="#"><img src="https://cdn-icons-png.flaticon.com/128/2343/2343694.png" alt=""> Contacts</a>
+          </div>
+        </div> 
+  </div>
+
+        <!-- nav2 End -->
+
           <!-- home -->
         <main class="container-fluid bg-dark">  
-          <section class="home bg-gradient bg-dark">
+          <section id="landing" class="home bg-gradient bg-dark">
             <div class="container">
               <div id="home" class="row text-center">
                 <div class="col-12 col-md-6">
@@ -112,6 +140,65 @@
         </div>
       </section>
 
+      <!-- Projects -->
+      <section class="projects bg-white">
+        <div id="projects">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="card m-5" style="width: 18rem;">
+                  <img src="https://cdn.pixabay.com/photo/2015/08/01/21/03/euro-870757_640.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Calculator</h5>
+                    <p class="card-text">A simple calculator template.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="card m-5" style="width: 18rem;">
+                  <img src="https://cdn.pixabay.com/photo/2015/05/26/23/52/technology-785742_640.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Keyboard</h5>
+                    <p class="card-text">A simple keyboard template.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="card m-5" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Ecommerce website</h5>
+                    <p class="card-text">A demo fast food Ecommerce website.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card m-5 align-item-center" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card m-5 align-item-center" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
           
 
 
