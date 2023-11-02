@@ -80,6 +80,19 @@ h1{
     border-radius: 50%;
 }
 
+/* Skills at 720px screens */
+@media screen and (max-width: 720px) {
+    #image{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    
+    ul li p{
+        text-align: center;
+    }
+}
+
 
 /* Projects */
 .projects{
@@ -113,14 +126,67 @@ h1{
     opacity: 1;
 } 
 
+.card{
+    width: 14rem;
+}
+
+/* project at 720px screens */
+@media screen and (max-width: 720PX) {
+    #projects {
+        padding-left: 50px;
+    }
+
+    .card{
+        width: 27rem;
+    }
+
+    .card-img-top:hover{
+        transform: scale(1.1) rotate(0deg);
+        display: none;
+    }
+    
+    .card:hover{
+        cursor: pointer;
+        transform: scale(1.2) rotate(0deg);
+        display: none;
+    }
+    .card-body{
+        background: rgb(27, 27, 27, .5);
+        color: white;
+    }
+    
+    .card:hover .card-body{
+        bottom: 250px;
+        display: none;
+    }   
+    
+    .card-text{
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .card:hover .card-text{
+        visibility: visible;
+        opacity: 1;
+        display: none;
+    } 
+    .card h5{
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .card p{
+        font-size: 24px;
+    }
+    p{
+        font-size: 24px;
+    }
+}
+/* projects media query end */
+
 /* contact */
 .contacts{
     width: 100vh;
 }
-
-
-
-
 
 .form{
     text-align: right;
