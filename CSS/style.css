@@ -45,27 +45,56 @@ img{
 
 
 /* home */
-
 .home{
     height: 100vh;
 }
 
 h1{
     font-family: "Sofia", sans-serif;
-    color: yellow;
+    color: black;
 }
 
 #photo{
-    height: 200px;
+    height: 250px;
     border-radius: 50%;
     padding: 5px;
-    width: 200px;
+    width: 250px;
 }
+
+/* #animation{
+    position: relative;
+    animation: img2 5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+@keyframes img2 {
+    0%   {background: transparent; transform: rotate(-45deg);}
+    25%  {background: transparent; bottom: 20px; }
+    75%  {background: transparent; left: 200px; }
+    100% {background:transparent; top: 0px;}
+  } */
+
+#animation{
+        height:1px;
+        width:0;
+        margin-top:50px;
+        background: transparent;
+        transform:rotate(0deg);
+        transform-origin:center;
+        animation:grow 20s linear forwards infinite;
+        
+      }
+      @keyframes grow{
+        to {width:1280px;}
+      }
+
+
 
 /* Resume */
 
-#resume{
+.Resume{
     height: 100vh;
+    background-color: whitesmoke;
 }
 
 
@@ -81,7 +110,7 @@ h1{
 }
 
 /* Skills at 720px screens */
-@media screen and (max-width: 720px) {
+/* @media screen and (max-width: 720px) {
     #image{
         width: 100px;
         height: 100px;
@@ -91,7 +120,7 @@ h1{
     ul li p{
         text-align: center;
     }
-}
+} */
 
 
 /* Projects */
@@ -131,7 +160,7 @@ h1{
 }
 
 /* project at 720px screens */
-@media screen and (max-width: 720PX) {
+/* @media screen and (max-width: 720PX) {
     #projects {
         padding-left: 50px;
     }
@@ -180,7 +209,7 @@ h1{
     p{
         font-size: 24px;
     }
-}
+} */
 /* projects media query end */
 
 /* contact */
@@ -194,7 +223,7 @@ h1{
 }
 
 input{
-    width:100%;
+    width: 100%;
 }
 /* #form{
     position: relative;
