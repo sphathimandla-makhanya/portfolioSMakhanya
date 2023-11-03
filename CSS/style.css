@@ -54,6 +54,11 @@ h1{
     color: black;
 }
 
+.home h1 {
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+  }
+
 #photo{
     height: 250px;
     border-radius: 50%;
@@ -68,9 +73,9 @@ h1{
         width:0;
         margin-top:50px;
         background: transparent;
-        transform:rotate(30deg);
+        transform:rotate(0deg);
         transform-origin:center;
-        animation:grow 20s linear forwards infinite;
+        animation:grow 15s linear forwards infinite;
         
       }
       @keyframes grow{
@@ -82,7 +87,7 @@ h1{
 /* Resume */
 
 .Resume{
-    height: 100vh;
+    /* height: 100vh; */
     background-color: whitesmoke;
 } 
 
@@ -103,10 +108,10 @@ h1{
 }
 
 /* Skills at 720px screens */
-@media screen and (max-width: 720px) {
+@media screen and (min-width: 720px) {
     #image{
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         border-radius: 50%;
     }
     
@@ -117,7 +122,7 @@ h1{
 
 
 /* Projects */
-.projects{
+#projects{
     height: 100vh;
 }
 
@@ -125,84 +130,74 @@ h1{
     transform: scale(1.1) rotate(0deg);
 }
 
-.card:hover{
-    cursor: pointer;
-    transform: scale(1.2) rotate(0deg);
-}
 .card-body{
     background: rgb(27, 27, 27, .5);
     color: white;
 }
 
-.card:hover .card-body{
-    bottom: 250px;
-}
 
 .card-text{
-    visibility: hidden;
-    opacity: 0;
-}
-
-.card:hover .card-text{
     visibility: visible;
     opacity: 1;
-} 
+    
+}
+
 
 .card{
     width: 14rem;
 }
 
 /* project at 720px screens */
-/* @media screen and (max-width: 720PX) {
+@media screen and (min-width: 720PX) {
     #projects {
-        padding-left: 50px;
+        padding-left: 60px;
     }
 
     .card{
-        width: 27rem;
+        width: 20rem;
     }
 
     .card-img-top:hover{
         transform: scale(1.1) rotate(0deg);
-        display: none;
+        /* display: none; */
     }
     
     .card:hover{
         cursor: pointer;
-        transform: scale(1.2) rotate(0deg);
-        display: none;
+        transform: scale(1.1) rotate(0deg);
+        /* display: none; */
     }
     .card-body{
-        background: rgb(27, 27, 27, .5);
+        background: rgb(whitesmoke, whitesmoke, whitesmoke, .5);
         color: white;
     }
     
     .card:hover .card-body{
-        bottom: 250px;
-        display: none;
+        bottom: 245px;
+        /* display: none; */
     }   
     
     .card-text{
-        visibility: visible;
-        opacity: 1;
+        visibility: none;
+        opacity: 0;
     }
     
     .card:hover .card-text{
         visibility: visible;
         opacity: 1;
-        display: none;
+        /* display: none; */
     } 
     .card h5{
-        font-size: 28px;
-        font-weight: 700;
+        font-size: 24px;
+        font-weight: 600;
     }
     .card p{
-        font-size: 24px;
+        font-size: 20px;
     }
     p{
-        font-size: 24px;
+        font-size: 20px;
     }
-} */ */
+} 
 /* projects media query end */
 
 /* contact */
@@ -229,19 +224,6 @@ textarea{
     height: 250px;
 }
 
-
-
-@keyframes mainAnim {
-    0%{
-        transform: translateY(0deg);
-    }
-    50%{
-        transform: translateY(180deg);
-    }
-    100%{
-        transform: translateY(360deg);
-    }
-}
 
 
 
