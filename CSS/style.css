@@ -122,9 +122,9 @@ h1{
 
 
 /* Projects */
-#projects{
+/* #projects{
     height: 100vh;
-}
+} */
 
 .card-img-top:hover{
     transform: scale(1.1) rotate(0deg);
